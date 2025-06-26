@@ -1,0 +1,95 @@
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  position: relative;
+}
+
+#currentLocation {
+  margin-top: 10px;
+  right: 20px;
+  z-index: 1001;
+  padding: 10px 16px;
+  background-color: #2483ea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#currentLocation:hover {
+  background-color: #0056b3;
+}
+
+#findShadeRoute {
+  margin-top: 10px;
+  left: 20px;
+  z-index: 1001;
+  padding: 10px 16px;
+  background-color: #45a049;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#findShadeRoute:hover {
+  background-color: #0a6a0f;
+}
+
+#findShortRoute {
+  margin-top: 10px;
+  left: 20px;
+  z-index: 1001;
+  padding: 10px 16px;
+  background-color: #e1a50d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#findShortRoute:hover {
+  background-color: #cd5e09;
+}
+
+#resetRoute {
+  margin-top: 10px;
+  left: 20px;
+  z-index: 1001;
+  padding: 10px 16px;
+  background-color: #bf2c2c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#resetRoute:hover {
+  background-color: #6e0505;
+}
+
+.pointOfIntrestType {
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 4px 6px;
+  background-color: #faf8f0;
+  color: #234;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #b3c6e0;
+  box-shadow: 0 1px 3px rgba(36, 131, 234, 0.08);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}

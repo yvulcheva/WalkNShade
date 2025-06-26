@@ -1,0 +1,15 @@
+{
+    "name": "walknshade",
+    "version": "1.0.0",
+    "description": "Web application visaulizing the shortest path with shade in Sofia, Bulgaria",
+    "main": "app.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "python backend/server.py",
+        "dev": "python backend/server.py",
+        "install-python": "pip install -r requirements.txt",
+        "install-all": "npm install && pip install -r requirements.txt",
+        "setup": "npm run install-all",
+        "postinstall": "pip install -r requirements.txt"
+    }
+}

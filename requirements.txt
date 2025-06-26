@@ -1,0 +1,10 @@
+PyYAML
+flask
+psycopg-pool
+python-dotenv
+psycopg2
+psycopg
+flask-cors
+networkx
+shapely
+flask

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WalkNShade Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WalkNShade Map</h1>
+      <p>Find the nearest shadowed path to your point of interest</p>
+    </header>
+
+    <button id="currentLocation" , onclick="currentLocation()">
+      Current location
+    </button>
+
+    <button id="findShadeRoute" onclick="findShadeRoute()">
+      Find Shade Route
+    </button>
+    <button id="findShortRoute" onclick="findShortRoute()">
+      Find Short Route
+    </button>
+
+    <button id="resetRoute" onclick="resetRoute()">Reset</button>
+
+    <label for="pointOfIntrestType">Point of intrest:</label>
+    <select id="pointOfIntrestType" onchange="onPointOfInterestTypeChange()">
+      <optgroup label="None" id="none">
+        <option value="none">None</option>
+      </optgroup>
+      <optgroup label="Health Centers" id="health">
+        <option value="all">All Health Centers</option>
+        <option value="pharmacy">Pharmacies</option>
+        <option value="doctors">Doctors</option>
+        <option value="dentist">Dentists</option>
+        <option value="clinic">Clinics</option>
+        <option value="hospital">Hospitals</option>
+        <option value="blood_donation">Blood Donation</option>
+      </optgroup>
+    </select>
+
+    <label for="gisLayer"> Display layer</label>
+    <select id="gisLayer" onchange="onGisLayerChange()">
+      <option value="none">None</option>
+      <option value="walkpath">Pedestrian network</option>
+      <option value="cadastre">Buildings</option>
+      <option value="shades">Shaded areas</option>
+    </select>
+
+    <div id="map" style="height: 100vh"></div>
+
+    <script src="https://unpkg.com/suncalc@1.9.0/suncalc.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>
